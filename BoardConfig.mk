@@ -25,7 +25,7 @@ TARGET_NO_BOOTLOADER := true
 
 # Inline kernel building
 TARGET_KERNEL_CONFIG := shamu_defconfig
-TARGET_KERNEL_SOURCE := kernel/moto/shamu
+TARGET_KERNEL_SOURCE := kernel/motorola/shamu
 BOARD_KERNEL_IMAGE_NAME := zImage-dtb
 
 BOARD_KERNEL_BASE := 0x00000000
