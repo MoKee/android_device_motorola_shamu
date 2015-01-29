@@ -9,9 +9,9 @@ $(call inherit-product, vendor/mk/config/common_full_phone.mk)
 $(call inherit-product, vendor/mk/config/nfc_enhanced.mk)
 
 # Inherit device configuration
-$(call inherit-product, device/moto/shamu/aosp_shamu.mk)
+$(call inherit-product, device/motorola/shamu/aosp_shamu.mk)
 
-DEVICE_PACKAGE_OVERLAYS += device/moto/shamu/overlay-mk
+DEVICE_PACKAGE_OVERLAYS += device/motorola/shamu/overlay-mk
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_NAME := mk_shamu
