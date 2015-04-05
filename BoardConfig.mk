@@ -24,7 +24,7 @@ TARGET_NO_BOOTLOADER := true
 
 # Inline kernel building
 TARGET_KERNEL_CONFIG := shamu_defconfig
-TARGET_KERNEL_SOURCE := kernel/moto/shamu
+TARGET_KERNEL_SOURCE := kernel/motorola/shamu
 BOARD_KERNEL_IMAGE_NAME := zImage-dtb
 
 BOARD_KERNEL_BASE := 0x00000000
@@ -50,7 +50,7 @@ MAX_EGL_CACHE_SIZE := 2048*1024
 # handled by the hardware composer
 MAX_VIRTUAL_DISPLAY_DIMENSION := 2048
 
-BOARD_EGL_CFG := device/moto/shamu/egl.cfg
+BOARD_EGL_CFG := device/motorola/shamu/egl.cfg
 
 BOARD_USES_ALSA_AUDIO := true
 
@@ -69,21 +69,21 @@ WIFI_BUS := PCIE
 
 #Bluetooth defines
 BOARD_HAVE_BLUETOOTH_BCM := true
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/moto/shamu/bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/motorola/shamu/bluetooth
 
 TARGET_NO_RADIOIMAGE := true
 TARGET_BOARD_PLATFORM := msm8084
 TARGET_BOOTLOADER_BOARD_NAME := shamu
 TARGET_NO_RPC := true
 
-TARGET_BOARD_INFO_FILE := device/moto/shamu/board-info.txt
+TARGET_BOARD_INFO_FILE := device/motorola/shamu/board-info.txt
 
 USE_OPENGL_RENDERER := true
 VSYNC_EVENT_PHASE_OFFSET_NS := 7500000
 SF_VSYNC_EVENT_PHASE_OFFSET_NS := 5000000
 TARGET_USES_ION := true
 TARGET_HW_DISK_ENCRYPTION := false
-TARGET_CRYPTFS_HW_PATH := device/moto/shamu/cryptfs_hw
+TARGET_CRYPTFS_HW_PATH := device/motorola/shamu/cryptfs_hw
 
 # Enable dex-preoptimization to speed up first boot sequence
 ifeq ($(HOST_OS),linux)
@@ -107,20 +107,20 @@ BOARD_FLASH_BLOCK_SIZE := 131072
 
 BOARD_CHARGER_ENABLE_SUSPEND := true
 
-TARGET_RECOVERY_FSTAB = device/moto/shamu/fstab.shamu
+TARGET_RECOVERY_FSTAB = device/motorola/shamu/fstab.shamu
 
 # Ensure f2fstools are built
 ifeq ($(HOST_OS),linux)
 TARGET_USERIMAGES_USE_F2FS := true
 endif
 
-TARGET_RELEASETOOLS_EXTENSIONS := device/moto/shamu
+TARGET_RELEASETOOLS_EXTENSIONS := device/motorola/shamu
 
 # Support Native Layer RF cutback
 BOARD_USES_CUTBACK_IN_RILD := true
 
 BOARD_SEPOLICY_DIRS += \
-       device/moto/shamu/sepolicy
+       device/motorola/shamu/sepolicy
 
 BOARD_SEPOLICY_UNION += \
         adspd.te \
@@ -181,7 +181,7 @@ BOARD_HAL_STATIC_LIBRARIES := libdumpstate.shamu
 # Include an expanded selection of fonts
 EXTENDED_FONT_FOOTPRINT := true
 
-# CMHW
-BOARD_HARDWARE_CLASS := device/moto/shamu/cmhw
+# MKHW
+BOARD_HARDWARE_CLASS := device/motorola/shamu/mkhw
 
 -include vendor/motorola/shamu/BoardConfigVendor.mk
