@@ -1,6 +1,6 @@
 # Boot animation
-TARGET_SCREEN_HEIGHT := 1440
-TARGET_SCREEN_WIDTH := 2560
+TARGET_SCREEN_HEIGHT := 2560
+TARGET_SCREEN_WIDTH := 1440
 
 # Inherit some common MK stuff.
 $(call inherit-product, vendor/mk/config/common_full_phone.mk)
