@@ -22,6 +22,8 @@ TARGET_CPU_VARIANT := krait
 
 TARGET_NO_BOOTLOADER := true
 
+MK_TOOLCHAIN_VARIANT := uber
+
 # Inline kernel building
 TARGET_KERNEL_CONFIG := shamu_defconfig
 TARGET_KERNEL_SOURCE := kernel/motorola/shamu
