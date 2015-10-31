@@ -139,10 +139,10 @@ BOARD_HAL_STATIC_LIBRARIES := libdumpstate.shamu
 # Include an expanded selection of fonts
 EXTENDED_FONT_FOOTPRINT := true
 
-# CMHW
+# MKHW
 BOARD_USES_CYANOGEN_HARDWARE := true
 BOARD_HARDWARE_CLASS := \
-    hardware/cyanogen   \
-    device/moto/shamu/cmhw
+    hardware/mokee   \
+    device/moto/shamu/mkhw
 
 -include vendor/motorola/shamu/BoardConfigVendor.mk
