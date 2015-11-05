@@ -210,6 +210,7 @@ PRODUCT_PACKAGES += \
     keystore.msm8084
 
 PRODUCT_PACKAGES += \
+    librmnetctl \
     libxml2
 
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -231,10 +232,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # never dexopt the MotoSignature
 $(call add-product-dex-preopt-module-config,MotoSignatureApp,disable)
-
-# Include IMSEnabler
-PRODUCT_PACKAGES += \
-    IMSEnabler
 
 # WiFi calling
 PRODUCT_PROPERTY_OVERRIDES += \
