@@ -145,4 +145,6 @@ BOARD_HARDWARE_CLASS := \
     hardware/mokee   \
     device/moto/shamu/mkhw
 
+USE_CLANG_PLATFORM_BUILD := true
+
 -include vendor/motorola/shamu/BoardConfigVendor.mk
