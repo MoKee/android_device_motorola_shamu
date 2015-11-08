@@ -140,7 +140,7 @@ BOARD_HAL_STATIC_LIBRARIES := libdumpstate.shamu
 EXTENDED_FONT_FOOTPRINT := true
 
 # MKHW
-BOARD_USES_CYANOGEN_HARDWARE := true
+BOARD_USES_MOKEE_HARDWARE := true
 BOARD_HARDWARE_CLASS := \
     hardware/mokee   \
     device/moto/shamu/mkhw
