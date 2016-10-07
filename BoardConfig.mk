@@ -144,7 +144,7 @@ EXTENDED_FONT_FOOTPRINT := true
 # MKHW
 BOARD_USES_MOKEE_HARDWARE := true
 BOARD_HARDWARE_CLASS := \
-    hardware/mokee   \
+    hardware/mokee/mkhw   \
     device/motorola/shamu/mkhw
 
 USE_CLANG_PLATFORM_BUILD := true
