@@ -2,16 +2,16 @@
 TARGET_SCREEN_HEIGHT := 2560
 TARGET_SCREEN_WIDTH := 1440
 
-# Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+# Inherit some common MK stuff.
+$(call inherit-product, vendor/mk/config/common_full_phone.mk)
 
 # Inherit device configuration
-$(call inherit-product, device/moto/shamu/aosp_shamu.mk)
+$(call inherit-product, device/motorola/shamu/aosp_shamu.mk)
 
-DEVICE_PACKAGE_OVERLAYS += device/moto/shamu/overlay-cm
+DEVICE_PACKAGE_OVERLAYS += device/motorola/shamu/overlay-mk
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_NAME := cm_shamu
+PRODUCT_NAME := mk_shamu
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Nexus 6
 
