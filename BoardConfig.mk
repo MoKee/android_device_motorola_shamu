@@ -135,7 +135,6 @@ DONT_DEXPREOPT_PREBUILTS := true
 # MKHW
 BOARD_USES_MOKEE_HARDWARE := true
 BOARD_HARDWARE_CLASS := \
-    hardware/mokee/mkhw   \
-    device/motorola/shamu/mkhw
+    hardware/mokee/mkhw
 
 -include vendor/motorola/shamu/BoardConfigVendor.mk
