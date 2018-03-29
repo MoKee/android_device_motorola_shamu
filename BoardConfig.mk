@@ -25,7 +25,7 @@ TARGET_NO_BOOTLOADER := true
 
 # Inline kernel building
 TARGET_KERNEL_CONFIG := shamu_defconfig
-TARGET_KERNEL_SOURCE := kernel/moto/shamu
+TARGET_KERNEL_SOURCE := kernel/motorola/shamu
 BOARD_KERNEL_IMAGE_NAME := zImage-dtb
 
 BOARD_KERNEL_BASE := 0x00000000
@@ -70,15 +70,15 @@ WIFI_BUS := PCIE
 
 #Bluetooth defines
 BOARD_HAVE_BLUETOOTH_BCM := true
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/moto/shamu/bluetooth
-BOARD_CUSTOM_BT_CONFIG := device/moto/shamu/bluetooth/vnd_shamu.txt
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/motorola/shamu/bluetooth
+BOARD_CUSTOM_BT_CONFIG := device/motorola/shamu/bluetooth/vnd_shamu.txt
 
 TARGET_NO_RADIOIMAGE := true
 TARGET_BOARD_PLATFORM := msm8084
 TARGET_BOOTLOADER_BOARD_NAME := shamu
 TARGET_NO_RPC := true
 
-TARGET_BOARD_INFO_FILE := device/moto/shamu/board-info.txt
+TARGET_BOARD_INFO_FILE := device/motorola/shamu/board-info.txt
 
 TARGET_USES_ION := true
 TARGET_USES_64_BIT_BINDER := true
@@ -98,18 +98,18 @@ BOARD_FLASH_BLOCK_SIZE := 131072
 BOARD_CHARGER_ENABLE_SUSPEND := true
 BOARD_HAL_STATIC_LIBRARIES := libhealthd.shamu
 BACKLIGHT_PATH := /sys/class/leds/lcd-backlight/brightness
-WITH_LINEAGE_CHARGER := false
+WITH_MOKEE_CHARGER := false
 
-TARGET_RECOVERY_FSTAB = device/moto/shamu/fstab.shamu
+TARGET_RECOVERY_FSTAB = device/motorola/shamu/fstab.shamu
 # Ensure f2fstools are built
 TARGET_USERIMAGES_USE_F2FS := true
 
-TARGET_RELEASETOOLS_EXTENSIONS := device/moto/shamu
+TARGET_RELEASETOOLS_EXTENSIONS := device/motorola/shamu
 
 # Support Native Layer RF cutback
 BOARD_USES_CUTBACK_IN_RILD := true
 
-BOARD_SEPOLICY_DIRS += device/moto/shamu/sepolicy
+BOARD_SEPOLICY_DIRS += device/motorola/shamu/sepolicy
 
 HAVE_ADRENO_SOURCE:= false
 
@@ -124,7 +124,7 @@ USE_DEVICE_SPECIFIC_CAMERA:= true
 
 USE_CLANG_PLATFORM_BUILD := true
 
-TARGET_FS_CONFIG_GEN += device/moto/shamu/config.fs
+TARGET_FS_CONFIG_GEN += device/motorola/shamu/config.fs
 
 # Render
 OVERRIDE_RS_DRIVER := libRSDriver_adreno.so
@@ -135,6 +135,6 @@ NUM_FRAMEBUFFER_SURFACE_BUFFERS := 3
 LZMA_RAMDISK_TARGETS := recovery
 
 # Device manifest
-DEVICE_MANIFEST_FILE := device/moto/shamu/manifest.xml
+DEVICE_MANIFEST_FILE := device/motorola/shamu/manifest.xml
 
 -include vendor/motorola/shamu/BoardConfigVendor.mk
