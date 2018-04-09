@@ -137,5 +137,6 @@ LZMA_RAMDISK_TARGETS := recovery
 
 # Device manifest
 DEVICE_MANIFEST_FILE := device/motorola/shamu/manifest.xml
+DEVICE_MATRIX_FILE := device/motorola/shamu/compatibility_matrix.xml
 
 -include vendor/motorola/shamu/BoardConfigVendor.mk
