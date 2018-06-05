@@ -26,7 +26,9 @@ PRODUCT_COPY_FILES += \
     device/motorola/shamu/init.shamu.power.rc:root/init.shamu.power.rc \
     device/motorola/shamu/init.shamu.usb.rc:root/init.shamu.usb.rc \
     device/motorola/shamu/fstab.shamu:root/fstab.shamu \
-    device/motorola/shamu/ueventd.shamu.rc:root/ueventd.shamu.rc
+    device/motorola/shamu/ueventd.shamu.rc:root/ueventd.shamu.rc \
+    device/motorola/shamu/rootdir/etc/init.qcom.devwait.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.qcom.devwait.sh \
+    device/motorola/shamu/rootdir/etc/init.qcom.devstart.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.qcom.devstart.sh
 
 # Input device files for shamu
 PRODUCT_COPY_FILES += \
