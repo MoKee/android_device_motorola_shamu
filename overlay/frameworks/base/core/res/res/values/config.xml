@@ -19,9 +19,6 @@
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-    <!-- If this is true, the screen will fade off. -->
-    <bool name="config_animateScreenLights">false</bool>
-
     <!-- Whether a software navigation bar should be shown. NOTE: in the future this may be
          autodetected from the Configuration. -->
     <bool name="config_showNavigationBar">true</bool>
@@ -110,12 +107,6 @@
 
     <!-- Shutdown if the battery temperature exceeds (this value * 0.1) Celsius. -->
     <integer name="config_shutdownBatteryTemperature">680</integer>
-
-    <!-- Default LED on time for notification LED in milliseconds. -->
-    <integer name="config_defaultNotificationLedOn">1000</integer>
-
-    <!-- Default LED off time for notification LED in milliseconds. -->
-    <integer name="config_defaultNotificationLedOff">9000</integer>
 
     <!-- reference volume index for music stream to limit headphone volume and display warning -->
     <integer name="config_safe_media_volume_index">5</integer>
